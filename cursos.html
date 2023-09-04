@@ -7,9 +7,17 @@
     <title>Blog De Café</title>
 
     <!-- CSS & Fonts -->
+    <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Descripción -->
+    <meta name="description" content="Chequea los cursos que ofrecemos en nuestro blog de café.">
 </head>
 
 <body>
@@ -39,7 +47,7 @@
 
         <div class="curso">
             <div class="curso__imagen">
-                <img src="img/curso1.jpg" alt="Imagen del curso">
+                <img src="img/curso1.jpg" loading="lazy" alt="Imagen del curso">
             </div>
             <div class="curso__info">
                 <h4 class="no-margin">Técnicas de extracción de café</h4>
@@ -52,12 +60,13 @@
                 <p class="curso__descripcion">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorum nemo libero corporis amet inventore. Dolor ratione unde ut minus nulla, suscipit officia et. Excepturi nihil id consequuntur aspernatur quibusdam.
                 </p>
+                <a href="cursos.html" class="boton boton--primario">Inscribite</a>
             </div>
         </div> <!-- CURSO -->
 
         <div class="curso">
             <div class="curso__imagen">
-                <img src="img/curso2.jpg" alt="Imagen del curso">
+                <img src="img/curso2.jpg" loading="lazy" alt="Imagen del curso">
             </div>
             <div class="curso__info">
                 <h4 class="no-margin">Taller para tostar y moler granos</h4>
@@ -70,12 +79,13 @@
                 <p class="curso__descripcion">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt saepe sed quam ratione, minus doloremque. Delectus eaque nemo harum nesciunt doloribus. Aspernatur atque unde, quis accusantium ipsum voluptates fuga voluptate!
                 </p>
+                <a href="cursos.html" class="boton boton--primario">Inscribite</a>
             </div>
         </div> <!-- CURSO -->
 
         <div class="curso">
             <div class="curso__imagen">
-                <img src="img/curso3.jpg" alt="Imagen del curso">
+                <img src="img/curso3.jpg" loading="lazy" alt="Imagen del curso">
             </div>
             <div class="curso__info">
                 <h4 class="no-margin">Cuatro recetas de café para principiantes</h4>
@@ -88,6 +98,7 @@
                 <p class="curso__descripcion">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo suscipit non exercitationem esse quia, ratione commodi. Rerum tenetur dolorum culpa corrupti non repudiandae sed! Exercitationem distinctio adipisci nostrum ad quod.
                 </p>
+                <a href="cursos.html" class="boton boton--primario">Inscribite</a>
             </div>
         </div> <!-- CURSO -->
     </main>
@@ -107,6 +118,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/modernizr.js"></script>
 </body>
 
 </html>

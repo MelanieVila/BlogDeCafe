@@ -7,9 +7,17 @@
     <title>Blog De Café</title>
 
     <!-- CSS & Fonts -->
+    <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Descripción -->
+    <meta name="description" content="Página web de blog de café.">
 </head>
 
 <body>
@@ -40,7 +48,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="img/blog1.jpg" alt="Imagen Blog">
+                    <picture>
+                        <source srcset="img/blog1.webp" loading="lazy" type="image/webp">
+                        <img src="img/blog1.jpg" loading="lazy" alt="Imagen Blog">
+                    </picture>
                 </div>
 
                 <div class="entrada__contenido">
@@ -52,7 +63,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog2.jpg" alt="Imagen Blog">
+                    <picture>
+                        <source srcset="img/blog2.webp" loading="lazy" type="image/webp">
+                        <img src="img/blog2.jpg" loading="lazy" alt="Imagen Blog">
+                    </picture>
                 </div>
 
                 <div class="entrada__contenido">
@@ -64,7 +78,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog3.jpg" alt="Imagen Blog">
+                    <picture>
+                        <source srcset="img/blog3.webp" loading="lazy" type="image/webp">
+                        <img src="img/blog3.jpg" loading="lazy" alt="Imagen Blog">
+                    </picture>
                 </div>
 
                 <div class="entrada__contenido">
@@ -130,6 +147,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/modernizr.js"></script>
 </body>
 
 </html>
